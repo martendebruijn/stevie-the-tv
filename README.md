@@ -13,20 +13,20 @@ Control Stevie the TV
 
 ## Install
 
-1.Register with Samsung SmartThings and obtain an API key. 2. Retrieve the device ID:
+1. Register with Samsung SmartThings and obtain an API key. 2. Retrieve the device ID:
 
 ```sh
 curl -X GET "https://api.smartthings.com/v1/devices" \
   -H "Authorization: Bearer <API_KEY>"
 ```
 
-3. Create a .env file and set the environment variables:
+2. Create a .env file and set the environment variables:
 
 ```sh
  cp src/.env.example src/.env
 ```
 
-4. Install the `requests` module and the `python-dotenv` module for Python:
+3. Install the `requests` module and the `python-dotenv` module for Python:
 
 ```sh
 pip install requests
