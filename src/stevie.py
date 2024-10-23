@@ -20,10 +20,7 @@ parser.add_argument(
 args = parser.parse_args()
 
 
-def turn_stevie(state):
-    command = "off"
-    if state == "on":
-        command = "on"
+def turn_stevie(command):
     data = {
         "commands": [{"component": "main", "capability": "switch", "command": command}]
     }
