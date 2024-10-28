@@ -17,6 +17,7 @@ parser.add_argument(
     "--turn", type=str, help="Turn Stevie on or off", choices=["on", "off"]
 )
 
+parser.add_argument("--volume", type=int, help="Set Stevie's volume (0-100)")
 args = parser.parse_args()
 
 
