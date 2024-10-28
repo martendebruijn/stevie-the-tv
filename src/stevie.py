@@ -35,3 +35,28 @@ def turn_stevie(command):
 
 if args.turn:
     turn_stevie(args.turn)
+
+
+# Capability: Audio Volume
+# See: https://developer.smartthings.com/docs/devices/capabilities/capabilities-reference#audioVolume
+# Volume: integer 0-100
+def set_volume(volume):
+    data = {
+        "commands": [
+            {
+                "component": "main",
+                "capability": "audioVolume",
+                "command": "setVolume",
+                "arguments": [volume],
+            }
+        ]
+    }
+    response = requests.post(base_url, headers=headers, json=data)
+    if response.status_code == 200:
+        print(f"Stevie's volume set to {volume}!")
+    else:
+        print(f"Error sending command: {response.status_code}")
+
+
+if args.volume:
+    set_volume(args.volume)
