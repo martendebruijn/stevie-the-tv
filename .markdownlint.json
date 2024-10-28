@@ -1,3 +1,10 @@
 {
-  "ol-prefix": false
+  "ol-prefix": false,
+  "no-duplicate-heading": false,
+  "no-inline-html": {
+    "allowed_elements": [
+      "details",
+      "summary"
+    ]
+  }
 }

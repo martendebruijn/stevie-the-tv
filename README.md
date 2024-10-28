@@ -9,8 +9,14 @@ Control Stevie the TV
   - [Usage](#usage)
     - [Switch](#switch)
       - [Turn Stevie ON](#turn-stevie-on)
+        - [Successful response](#successful-response)
+        - [Unsuccessful response](#unsuccessful-response)
       - [Turn Stevie OFF](#turn-stevie-off)
+        - [Successful response](#successful-response-1)
+        - [Unsuccessful response](#unsuccessful-response-1)
     - [Audio volume](#audio-volume)
+      - [Successful response](#successful-response-2)
+      - [Unsuccessful response](#unsuccessful-response-2)
   - [References](#references)
 
 ## Install
@@ -51,11 +57,45 @@ Turn Stevie on or off.
 python src/stevie.py --turn on
 ```
 
+<details>
+<summary>Responses</summary>
+
+##### Successful response
+
+```sh
+Stevie is turned on!
+```
+
+##### Unsuccessful response
+
+```sh
+Error sending command: <code>
+```
+
+</details>
+
 #### Turn Stevie OFF
 
 ```sh
 python src/stevie.py --turn off
 ```
+
+<details>
+<summary>Responses</summary>
+
+##### Successful response
+
+```sh
+Stevie is turned off!
+```
+
+##### Unsuccessful response
+
+```sh
+Error sending command: <code>
+```
+
+</details>
 
 ### Audio volume
 
@@ -67,6 +107,23 @@ Change how loud Stevie is.
 ```sh
 python src/stevie.py --volume int[0...100]
 ```
+
+<details>
+<summary>Responses</summary>
+
+#### Successful response
+
+```sh
+Stevie's volume is set to {volume}!
+```
+
+#### Unsuccessful response
+
+```sh
+Error sending command: <code>
+```
+
+</details>
 
 ## References
 
