@@ -7,8 +7,10 @@ Control Stevie the TV
 - [stevie-the-tv](#stevie-the-tv)
   - [Install](#install)
   - [Usage](#usage)
-    - [Turn Stevie ON](#turn-stevie-on)
-    - [Turn Stevie OFF](#turn-stevie-off)
+    - [Switch](#switch)
+      - [Turn Stevie ON](#turn-stevie-on)
+      - [Turn Stevie OFF](#turn-stevie-off)
+  - [Audio volume](#audio-volume)
   - [References](#references)
 
 ## Install
@@ -36,16 +38,34 @@ pip install python-dotenv
 
 ## Usage
 
-### Turn Stevie ON
+### Switch
+
+Turning Stevie on or off.
+
+- **Flag**: `--turn`
+- **Options**: `on`, `off`
+
+#### Turn Stevie ON
 
 ```sh
 python src/stevie.py --turn on
 ```
 
-### Turn Stevie OFF
+#### Turn Stevie OFF
 
 ```sh
 python src/stevie.py --turn off
+```
+
+## Audio volume
+
+Change how loud Stevie is.
+
+- **Flag**: `--volume`
+- **Options**: integer `0-100`
+
+```sh
+python src/stevie.py --volume int[0...100]
 ```
 
 ## References
