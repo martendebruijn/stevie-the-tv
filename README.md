@@ -10,7 +10,7 @@ Control Stevie the TV
     - [Switch](#switch)
       - [Turn Stevie ON](#turn-stevie-on)
       - [Turn Stevie OFF](#turn-stevie-off)
-  - [Audio volume](#audio-volume)
+    - [Audio volume](#audio-volume)
   - [References](#references)
 
 ## Install
@@ -57,7 +57,7 @@ python src/stevie.py --turn on
 python src/stevie.py --turn off
 ```
 
-## Audio volume
+### Audio volume
 
 Change how loud Stevie is.
 
