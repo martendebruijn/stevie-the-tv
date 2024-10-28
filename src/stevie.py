@@ -20,6 +20,8 @@ parser.add_argument(
 args = parser.parse_args()
 
 
+# Capability: Switch
+# See: https://developer.smartthings.com/docs/devices/capabilities/capabilities-reference#switch
 def turn_stevie(command):
     data = {
         "commands": [{"component": "main", "capability": "switch", "command": command}]
