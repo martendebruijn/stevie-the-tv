@@ -40,7 +40,7 @@ pip install python-dotenv
 
 ### Switch
 
-Turning Stevie on or off.
+Turn Stevie on or off.
 
 - **Flag**: `--turn`
 - **Options**: `on`, `off`
