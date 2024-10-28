@@ -33,4 +33,5 @@ def turn_stevie(command):
         print(f"Error sending command: {response.status_code}")
 
 
-turn_stevie(args.turn)
+if args.turn:
+    turn_stevie(args.turn)
